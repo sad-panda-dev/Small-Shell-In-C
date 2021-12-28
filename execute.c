@@ -75,13 +75,7 @@ if ( (gid = setpgid(0,0)) == -1) { // move child to a different group
         }
         sleep(1);
 
-        }
-
-        //struct sigaction sa;                                                                                                                                               
-        //sigemptyset(&sa.sa_mask);                                                                                                                                          
-        //sa.sa_handler = &handle_child;                                                                                                                                     
-        //sa.sa_flags = SA_RESTART;                                                                                                                                          
-        //sigaction(SIGCHLD, &sa, NULL);                                                                                                                                     
+        }                                                                                                                                    
 
     }//parent exit                                                                                                                                                           
   return child_info;
